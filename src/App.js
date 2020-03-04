@@ -3,13 +3,17 @@ import vsSchoolProducts from "./vschoolProducts"
 import './App.css';
 import Product from "./Product"
 
-function App() {
-  const products = vsSchoolProducts.map(item => <Product Key={item.id} product={item}/>)
-  return (
+
+class App extends React.Component{
+ 
+  render() {
+     const products = vsSchoolProducts.map(item => <Product Key={item.id} product={item}/>)
+   return (
     <div className="App">
       {products}
-    </div>
-  );
+     </div>
+   )
+  }
 }
 
 export default App;
