@@ -4,7 +4,7 @@ import './App.css';
 import Product from "./Product"
 
 function App() {
-  const products = vsSchoolProducts.map(product => <Product Key={product.id} name={product.name} price={Product.price} description={product.description}/>)
+  const products = vsSchoolProducts.map(item => <Product Key={item.id} product={item}/>)
   return (
     <div className="App">
       {products}
