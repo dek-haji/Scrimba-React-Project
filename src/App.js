@@ -11,6 +11,7 @@ class App extends React.Component{
       products: [],
     }
   }
+
   render() {
      const products = vsSchoolProducts.map(item => <Product Key={item.id} product={item}/>)
    return (
