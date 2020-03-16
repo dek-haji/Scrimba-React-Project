@@ -8,4 +8,12 @@ class Credential extends React.Component{
             isLoggedIn: false
         }
     }
+    render() {
+        return (
+            <div>
+                <button>LOG IN </button>
+                </div>
+        )
+    }
 }
+export default Credential
