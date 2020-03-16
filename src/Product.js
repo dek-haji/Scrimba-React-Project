@@ -4,7 +4,7 @@ import React from "react"
 class Product extends React.Component {
 
 
-    render(props) {
+    render() {
         return(
         <div className="product-list">
             <h3>{this.props.product.name}</h3>
