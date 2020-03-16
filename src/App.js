@@ -11,6 +11,7 @@ class App extends React.Component{
     this.state = {
       products: []
     }
+    this.handleClick = this.handleClick.bind(this)
   }
     handleClick(id) {
       this.setState(prev => {
@@ -20,13 +21,14 @@ class App extends React.Component{
           }
           return upTo
         })
+        console.log("its working")
         return {
           products: updated
         }
       })
     }
   render() {
-     const products = vsSchoolProducts.map(item => <Product Key={item.id} product={item}/>)
+     const products = vsSchoolProducts.map(item => <Product Key={item.id} product={item} handleClick={this.handleClick} />)
    return (
      <div className="App">
        {products}
