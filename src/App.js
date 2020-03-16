@@ -12,7 +12,19 @@ class App extends React.Component{
       products: []
     }
   }
-
+    handleClick(id) {
+      this.setState(prev => {
+        const updated = prev.products.map(upTo => {
+          if (upTo.id === id) {
+            upTo.isBuyy = !upTo.isBuyy
+          }
+          return upTo
+        })
+        return {
+          products: updated
+        }
+      })
+    }
   render() {
      const products = vsSchoolProducts.map(item => <Product Key={item.id} product={item}/>)
    return (
