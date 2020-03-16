@@ -10,7 +10,7 @@ class Product extends React.Component {
             <h3 style={this.props.completedStyle ? this.props.completedStyle: null}>{this.props.product.name}</h3>
             <p>Price: {this.props.product.price}</p>
                 <p>description: {this.props.product.description}</p>
-                <button onClick={this.props.handleClick}>Buy</button>
+                <button onClick={this.props.handleClick(this.props.product.id)}>Buy</button>
         </div>
     )
     }
