@@ -14,14 +14,14 @@ class App extends React.Component{
     this.handleClick = this.handleClick.bind(this)
   }
   handleClick(id) {
-    this.setState(prev => {
-      const updated = prev.products.map(upTo => {
+    this.setState(() => {
+      const updated = vsSchoolProducts.map(upTo => {
         if (upTo.id === id) {
           upTo.isBuyy = !upTo.isBuyy
         }
         return upTo
       })
-      console.log("its working")
+      console.log("its working", this.state.products.isBuyy)
       return {
         products: updated
       }
