@@ -31,7 +31,7 @@ class MemeGenerator extends React.Component{
         return (
             <div>
                 <form className="meme-form">
-                    Top Text:<input
+                    <input
                         type="text"
                         name="topText"
                         placeholder="Top Text"
@@ -39,7 +39,7 @@ class MemeGenerator extends React.Component{
                         onChange={this.onchangeHandler}
                         />
                     <br/>
-                    Bottom Text:<input
+                    <input
                         type="text"
                         name="bottomText"
                         placeholder="Bottom Text"
