@@ -18,7 +18,15 @@ class MemeGenerator extends React.Component{
                 console.log(memes[0])
                 this.setState({AllMemeImgs: memes})
             })
+        this.onchangeHandler= this.onchangeHandler.bind(this)
     }
+    onchangeHandler(event) {
+        const { name, value } = event.target
+        this.setState({
+            [name]: value
+        })
+    }
+
     render() {
         return (
             <div>
@@ -27,13 +35,17 @@ class MemeGenerator extends React.Component{
                         type="text"
                         name="topText"
                         placeholder="Top Text"
-                        value={this.state.topText} />
+                        value={this.state.topText}
+                        onChange={this.onchangeHandler}
+                        />
                     <br/>
                     Bottom Text:<input
                         type="text"
                         name="bottomText"
                         placeholder="Bottom Text"
-                        value={this.state.bottomText} />
+                        value={this.state.bottomText}
+                        onChange={this.onchangeHandler}
+                        />
 
                     <button>Gen</button>
                 </form>
