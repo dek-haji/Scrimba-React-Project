@@ -68,7 +68,8 @@ header>p {
 }
 
 .meme>img {
-  width: 100%;
+  width: 70%;
+  height: 5%;
 }
 
 .meme>h2 {
