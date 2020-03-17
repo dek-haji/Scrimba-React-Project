@@ -27,14 +27,14 @@ class ApplicationView extends React.Component {
                     <input
                         name="firstName"
                         value={this.state.firstName}
-                        handleChange={this.handleChange}
+                        onChange={this.handleChange}
                         />
                     <br />
                     Last name:
                     <input
                         name="lastName"
                         value={this.state.lastName}
-                        handleChange={this.handleChange}
+                        onChange={this.handleChange}
                         />
                     <br />
                 </form>
