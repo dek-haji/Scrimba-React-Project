@@ -26,7 +26,9 @@ class MemeGenerator extends React.Component{
             [name]: value
         })
     }
-    onClickHandle() {
+    onClickHandle(event) {
+        event.preventDefault()
+        
     }
 
     render() {
