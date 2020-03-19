@@ -12,7 +12,6 @@ class MemeGenerator extends React.Component {
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
-    
     componentDidMount() {
         fetch("https://api.imgflip.com/get_memes")
             .then(response => response.json())
@@ -21,25 +20,21 @@ class MemeGenerator extends React.Component {
                 this.setState({ allMemeImgs: memes })
             })
     }
-    
     handleChange(event) {
         const {name, value} = event.target
         this.setState({ [name]: value })
     }
-    
     /**
      * Create a method that, when the "Gen" button is clicked, chooses one of the
      * memes from our `allMemeImgs` array at random and makes it so that is the
      * meme image that shows up in the bottom portion of our meme generator site (`.url`)
      */
-    
     handleSubmit(event) {
         event.preventDefault()
         const randNum = Math.floor(Math.random() * this.state.allMemeImgs.length)
         const randMemeImg = this.state.allMemeImgs[randNum].url
         this.setState({ randomImg: randMemeImg })
     }
-    
     render() {
         return (
             <div>
@@ -50,15 +45,14 @@ class MemeGenerator extends React.Component {
                         placeholder="Top Text"
                         value={this.state.topText}
                         onChange={this.handleChange}
-                    /> 
-                    <input 
+                    />
+                    <input
                         type="text"
                         name="bottomText"
                         placeholder="Bottom Text"
                         value={this.state.bottomText}
                         onChange={this.handleChange}
-                    /> 
-                
+                    />
                     <button>Gen</button>
                 </form>
                 <div className="meme">
