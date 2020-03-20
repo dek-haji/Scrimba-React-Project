@@ -2,12 +2,12 @@ import React, {useState} from "react"
 
 
 
-function MemeGenerator() {
-    const [topText, setTopText] = useState("")
-    const [bottomText, setBottomText] = useState("")
-    const [randomImg, setRandomImage] = usestate("http://i.imgflip.com/1bij.jpg")
-    const [allMemeImgs, setAllImages] = useState([])
-}
+// function MemeGenerator() {
+//     const [topText, setTopText] = useState("")
+//     const [bottomText, setBottomText] = useState("")
+//     const [randomImg, setRandomImage] = usestate("http://i.imgflip.com/1bij.jpg")
+//     const [allMemeImgs, setAllImages] = useState([])
+// }
 class MemeGenerator extends React.Component {
     constructor() {
         super()
