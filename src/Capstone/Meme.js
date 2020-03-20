@@ -12,6 +12,9 @@ function Meme() {
     }
     useEffect(() => {
         setColor(randomcolor())
+        setInterval(() => {
+            console.log("its working")
+        }, 1000);
     }, [count])
     return (
         <div>
