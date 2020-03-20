@@ -8,7 +8,7 @@ import React, {useState} from "react"
 //     const [randomImg, setRandomImage] = usestate("http://i.imgflip.com/1bij.jpg")
 //     const [allMemeImgs, setAllImages] = useState([])
 // }
-class MemeGenerato extends React.Component {
+class MemeGenerator extends React.Component {
     constructor() {
         super()
         this.state = {
