@@ -1,12 +1,10 @@
 import React from "react"
-import MemeGenerator from "./Capstone/MemeGenerator"
-import Header from "./Capstone/Header"
+import Meme from "./Capstone/Meme"
 
-function ApplicationView(params) {
+function ApplicationView() {
     return (
         <div>
-            <Header />
-            <MemeGenerator />
+            <Meme />
         </div>
     )
 }
