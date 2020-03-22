@@ -11,14 +11,14 @@ function Meme() {
         setCount(prevCount => prevCount - 1)
     }
 
-     useEffect(() => {
-        setInterval(() => {
-        setCount(prevCount => prevCount + 1)
-        }, 1000)
-    }, [])
-    useEffect(() => {
-        setColor(randomcolor())
-    }, [count])
+    //  useEffect(() => {
+    //     setInterval(() => {
+    //     setCount(prevCount => prevCount + 1)
+    //     }, 1000)
+    // }, [])
+    // useEffect(() => {
+    //     setColor(randomcolor())
+    // }, [count])
     return (
         <div>
             <h1 style={{color: color}}>{count}</h1>

@@ -61,6 +61,7 @@ class MemeGenerator extends React.Component {
                         value={this.state.bottomText}
                         onChange={this.handleChange}
                     />
+
                     <button>Gen</button>
                 </form>
                 <div className="meme">
