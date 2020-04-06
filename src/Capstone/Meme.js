@@ -7,9 +7,7 @@ function Meme() {
     function increment() {
         setCount(prevCount => prevCount + 1)
     }
-    function decrement() {
-        setCount(prevCount => prevCount - 1)
-    }
+   
 
     //  useEffect(() => {
     //     setInterval(() => {
