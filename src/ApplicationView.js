@@ -1,10 +1,10 @@
 import React from "react"
-import Meme from "./Capstone/Meme"
+import MemeGenerator from "./Capstone/MemeGenerator"
 
 function ApplicationView() {
     return (
         <div>
-            <Meme />
+            <MemeGenerator />
         </div>
     )
 }
